@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--ng-app:tells AngularJS that this is the root element of the AngularJS application-->
+<html ng-app="appname">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--own file-->
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <!--ng-controller: attaches a controller class to the view-->
+    <div ng-controller="appCtrl">
+      <p>{{greeting.text}}, world. <i>I'm a potato!!!</i> </p>
+      <img ng-src="{{src}}" />
+      <p><b>{{note.text}}</b></p>
+      <p>I am taking the class to help further my understanding of <a href="http://www.se.rit.edu/~swen-344/homeworks/webtechnologies.html">web development</a>.
+      I am glad that I'm learning about things beyond HTML and CSS since I wasn't
+      aware of DNS servers and HTTP. My hobbies include growing, flowering, and 
+      <a href="/~jxc3889/AngularJS/rick.html">rickrolling</a>
+</p>
+    </div>
+  </body>
+
+</html>
